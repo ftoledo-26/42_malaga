@@ -35,3 +35,17 @@ char	*ft_strchr(const char *str, int c)
 		return ((char*)&str[i]);
 	return ('\0');
 }
+char ft_get_line(char lonlen)
+{
+	char	*str;
+	int i;
+
+	i = 0;
+	if (lonlen[i] != '\o')
+		return ('\0');
+	while (lonlen[i] != '\0' && lonlen[i] != '\n')
+	{
+		/* code */
+	}
+	
+}

@@ -88,3 +88,28 @@ char ft_get_line(char lonlen)
 	str[i] = '\0';
 	return (str);
 }
+int	ft_izq_line(char izq_line)
+{
+	int	i;
+	int j;
+	char	*str;
+	
+	i = 0;
+	if (!izq_line[i])
+	{
+			free(izq_line);
+			return (str);
+	}
+	while (izq_line != '\0' && izq_line != '\n')
+		i++;
+	str = (char *) malloc(sizeof(char) * (strlen(izq_line) - i + 1));
+	if (!str)
+			return ('\0');
+		i++;
+		j = 0;
+		while(izq_line[i] != '\0')
+			str[j++] = izq_line[i++]; 
+	free(izq_line);
+	return (str);
+}
+

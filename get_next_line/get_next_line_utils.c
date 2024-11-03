@@ -1,6 +1,7 @@
 #include "get_next_line.h"
 
-size_t strlen(char *s){
+size_t strlen(char *s)
+{
     size_t  i;
 
     i = 0;
@@ -36,7 +37,8 @@ char	*ft_strchr(const char *str, int c)
 	return ('\0');
 }
 
-char    *ft_strjoin(char const *s1, char const *s2){
+char    *ft_strjoin(char const *s1, char const *s2)
+{
     int	i;
 	int len1;
 	int len2;
@@ -63,7 +65,7 @@ char    *ft_strjoin(char const *s1, char const *s2){
 	return('\0')
 }
 
-char ft_get_line(char lonlen)
+char *ft_get_line(char lonlen)
 {
 	char	*str;
 	int i;

@@ -15,5 +15,5 @@ void ft_memset(void *ptr, int value, unsigned int num)
         i++;
     }
 
-    return ptr;
+    return (ptr);
 }

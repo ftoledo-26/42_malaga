@@ -1,13 +1,16 @@
 #include "libft.h"
-#include <aio.h>
+
 
 void	ft_memcpy(void *dst, const void *src, size_t n)
 {
-	unsigned char	*tmp1;
-	unsigned char	*tmp2;
+	 char	*tmp1;
+	const char	*tmp2;
 
-	tmp1 = (unsigned char *)src;
-	tmp2 = (unsigned char *)dst;
+	if (!dst && !src)
+		return ('\0')
+	
+	tmp1 = ( char *)src;
+	tmp2 = (const char *)dst;
 	while (n > 0)
 	{
 		*tmp2++ = *tmp1++;

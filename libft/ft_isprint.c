@@ -1,6 +1,6 @@
 #include "libft.h"
 
-int isprint(char c)
+int ft_isprint(char c)
 {
     if (c >= 32)
         return 1;

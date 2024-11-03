@@ -239,4 +239,33 @@ void	*ft_memchr(const void *s, int c, size_t n);
 
 char    *ft_strjoin(char const *s1, char const *s2);
 
+
+/**
+ * this function copies 'n' bytes from memory area pointed to by 'str2' to the memory area pointed
+ * to by 'str1' if the 'str1' memory area is located after the 'str2' area the function use 'memcpy'
+ * 
+ * Param str1 Pointer to the destination memory area where the content is to be copied
+ * Param str2 
+ * pointer to the source of data to be copied
+ * Param n Number of bytes to copied
+ * 
+ * return a pointer to the destination area
+ */
+
+void	*ft_memmove(void *str1, const void *str2, size_t n);
+
+
+/**
+ * Locates the first occurence of the null teminated string 'needle' within the null terminated string
+ * 'haystack' when not more than 'len'character are searched
+ * 
+ * Param haystack the string to be searched
+ * Param needle the string to search for
+ * Param len the maximun numbers of character to search
+ * 
+ * return if needle is empty string 'haystack' is return / a pointer to the first character of the first occurence of 'needle'
+ * is returned
+ */
+
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 #endif

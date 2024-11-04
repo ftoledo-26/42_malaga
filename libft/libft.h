@@ -268,4 +268,11 @@ void	*ft_memmove(void *str1, const void *str2, size_t n);
  */
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
+
+
+
+char    *ft_strdup(const char *s);
+char    *ft_substr(char const *str, unsigned int star, size_t len);
+
+
 #endif

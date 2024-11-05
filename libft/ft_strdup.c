@@ -11,4 +11,3 @@ char    *ft_strdup(const char *s)
         return ('\0')
     return(ft_memcpy(cpy, s, len));
 }
-aaaaaa

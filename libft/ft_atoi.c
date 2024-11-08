@@ -2,9 +2,9 @@
 
 int	ft_atoi(char *str)
 {
-	int		i;
-	int		negative;
-	int		numb;
+	int	i;
+	int	negative;
+	int	numb;
 
 	i = 0;
 	negative = 1;

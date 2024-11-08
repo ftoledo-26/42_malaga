@@ -282,21 +282,37 @@ char    *ft_substr(char const *str, unsigned int star, size_t len);
 
 
 /**
+ * Generate a string that represent the value of the integer of argument
+ * the number negatives must be controled
  * 
+ * Param n the integer to convert
+ * 
+ * Return the string that represent the intger n
+ * return a null value if the memory reserv fail    
  */
 
 char	*ft_itoa(int n);
 
 
 /**
+ * Send the numbre 'n' to the file added
  * 
+ * Param n The number to send
+ * Param fd the file which we want to write
+ * 
+ * Return nothing
  */
 
 void	ft_putnbr_fd(int n, int fd);
 
 
 /**
+ * Send the string 's'to the file especified
  * 
+ * Param s The string to send
+ * Param fd The file
+ * 
+ * Return nothing
  */
 
 void	ft_putstr_fd(char *s, int fd);

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ftoledo- <ftoledo@student.42.fr>           +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/09 20:12:36 by ftoledo-          #+#    #+#             */
+/*   Updated: 2024/11/11 10:51:55 by ftoledo-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 static int	checkset(char const *set, char const c)
@@ -10,7 +22,6 @@ static int	checkset(char const *set, char const c)
 	}
 	return (0);
 }
-
 
 static char	*set_trim(char const *s1, char *trimmed, int start, int end)
 {
@@ -32,7 +43,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		end;
 	int		len;
 
-	len = ft_strlen(s1);
+	len = ft_strlen((char *)s1);
 	start = 0;
 	while (checkset(set, s1[start]))
 		++start;

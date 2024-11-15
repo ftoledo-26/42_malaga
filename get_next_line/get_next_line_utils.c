@@ -1,6 +1,6 @@
 #include "get_next_line.h"
 
-size_t strlen(char *s)
+size_t ft_strlen(char *s)
 {
     size_t  i;
 
@@ -34,7 +34,7 @@ char	*ft_strchr(const char *str, int c)
 	}
 	if (c == '\0')
 		return ((char*)&str[i]);
-	return ('\0');
+	return (NULL);
 }
 
 char    *ft_strjoin(char const *s1, char const *s2)
@@ -62,7 +62,7 @@ char    *ft_strjoin(char const *s1, char const *s2)
 		str[len1] = '\0';
 		return (str);
 	}
-	return('\0')
+	return(NULL)
 }
 
 char *ft_get_line(char lonlen)
@@ -75,7 +75,7 @@ char *ft_get_line(char lonlen)
 		return ('\0');
 	str = (char*)malloc(sizeof(char)) * (i + 2);
 	if (!str)
-		return ('\0');
+		return (NULL);
 	i = 0;
 	while (lonlen[i] != '\0' && lonlen[i] != '\n')
 	{
@@ -106,7 +106,7 @@ int	ft_izq_line(char izq_line)
 		i++;
 	str = (char *) malloc(sizeof(char) * (strlen(izq_line) - i + 1));
 	if (!str)
-			return ('\0');
+			return (NULL);
 		i++;
 		j = 0;
 		while(izq_line[i] != '\0')

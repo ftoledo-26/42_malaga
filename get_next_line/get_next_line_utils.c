@@ -90,7 +90,34 @@ char *ft_get_line(char lonlen)
 	str[i] = '\0';
 	return (str);
 }
-int	ft_izq_line(char izq_line)
+
+char	*ft_substr(char *s, unsigned int start, size_t len)
+{
+	size_t	i;
+	char	*res;
+
+	i = 0;
+	if (!s)
+		return (0);
+	if (start > ft_strlen(s))
+	{
+		res = malloc(sizeof(char) * (1));
+		if (!res)
+			return (NULL);
+		res[0] = '\0';
+		return (res);
+	}
+	if (ft_strlen(s) - start < len)
+		len = ft_strlen(s) - start;
+	res = malloc(sizeof(char) * (len + 1));
+	if (!res)
+		return (NULL);
+	while (start < ft_strlen(s) && i < len && s[start])
+		res[i++] = s[start++];
+	res[i] = '\0';
+	return (res);
+}
+/*int	ft_izq_line(char izq_line)
 {
 	int	i;
 	int j;
@@ -113,5 +140,5 @@ int	ft_izq_line(char izq_line)
 			str[j++] = izq_line[i++]; 
 	free(izq_line);
 	return (str);
-}
+}*/
 
